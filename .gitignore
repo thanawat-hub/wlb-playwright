@@ -49,3 +49,5 @@ robot_venv*
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+/node_modules
