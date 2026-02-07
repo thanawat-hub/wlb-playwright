@@ -30,6 +30,7 @@ bun --help
 # Start with bun
 ไปอยู่ที่ path project-bun ที่ต้องการ
 ```
+cd /mnt/d/2026/_Project/we_love_bug_/_learn/2week_7_21_02/wllb-workshop-bun
 bun create playwright
 ```
 เลือกตามนี้  
@@ -41,9 +42,11 @@ bun create playwright
 
 etc.
 ถ้าเผลอลงผิด path แล้วสามารถย้ายไปที่ ต้องการได้
-mv package.json package-lock.json playwright.config.ts tests "/mnt/d/2026/_Project/we_love_bug_/_learn/2week_7_21_02/wllb-workshop-bun/e2e-ui/ex01/"
+mv package.json package-lock.json playwright.config.ts tests "/mnt/d/2026/_Project/we_love_bug_/_learn/2week_7_21_02/wllb-workshop-bun/"
+.  
+> กฎเหล็ก: ให้จำไว้เสมอว่า "ไฟล์ package.json อยู่ที่ไหน ให้รันคำสั่ง Bun ที่นั่นครับ"
 
-ถ้ามาท่านี้ให้ install node_modules ใหม่ , และลบที่เดิม <br>โดยรัน
+ถ้ามาท่านี้ให้ install node_modules ใหม่ , และลบที่เดิม <br>โดยรัน (ควรอยู่ที่ root path)
 ```
 bun install
 bun run playwright install
@@ -55,9 +58,13 @@ bun run playwright install
 bun x playwright test tests/login.spec.ts
 ```
 
-รันแบบ ui
+รันแบบ ui & headless หรือไปดูใน package.json
 ```
+bun x playwright test ชื่อไฟล์ของคุณ.spec.ts
 bun x playwright test tests/login.spec.ts --ui
+#or in json
+bun run test:ui
+bun run test:headed
 ```
 
 .
