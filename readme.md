@@ -59,3 +59,9 @@ bun x playwright test tests/login.spec.ts
 ```
 bun x playwright test tests/login.spec.ts --ui
 ```
+
+.
+add เพื่อไม่ต้องให้ push ใหม่ทุกครั้ง
+```
+git config --global credential.helper store
+```
